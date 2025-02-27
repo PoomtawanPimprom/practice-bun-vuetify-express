@@ -1,5 +1,5 @@
 import { Router, type RouterOptions } from "express";
-import type { RoleControllerType, UserControllerType } from "../type";
+import type { RoleControllerType } from "../type";
 
 export default class RoleRouter{ 
     protected static instance: RoleRouter;
@@ -8,10 +8,10 @@ export default class RoleRouter{
         private readonly roleController: RoleControllerType
     ){}
 
-    public static getInstance(UserController:UserControllerType): RoleRouter{
+    public static getInstance(roleController:RoleControllerType): RoleRouter{
         if (this.instance !== undefined) return this.instance;
 
-        this.instance = new RoleRouter(UserController);
+        this.instance = new RoleRouter(roleController);
     
         return this.instance;
     }
