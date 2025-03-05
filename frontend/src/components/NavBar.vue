@@ -7,15 +7,11 @@
                 </v-col>
                 
                 <!-- เมนูสำหรับจอขนาดกลางและใหญ่ -->
-                <v-col cols="0" md="6" class="d-none d-md-flex">
-                    <!-- <v-btn href="/" variant="text">หน้าแรก</v-btn> -->
-                    <!-- <v-btn href="/help" variant="text">คู่มือการสมัครงาน</v-btn> -->
-                </v-col>
                 
                 <v-spacer />
-                
                 <!-- ปุ่มผู้ใช้ -->
                 <v-col cols="6" md="4" class="d-flex justify-end">
+                    <v-btn href="/about" variant="text">about</v-btn>
                     <v-btn >
                         Login
                         <v-menu activator="parent">
