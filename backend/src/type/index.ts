@@ -10,7 +10,7 @@ import type {RoleServiceType} from './role/role-service'
 import type {
     User, UserRequest, UserResponse,
     Role,RoleRequest,RoleResponse
-} from './model'
+} from '../type/model'
 
 export type {
     UserControllerType,

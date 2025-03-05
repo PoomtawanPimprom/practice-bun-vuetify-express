@@ -1,13 +1,13 @@
 import express, { type Request, type Response } from "express";
-import UserRouter from "./router/user";
-import UserRepository from "./repository/user";
-import UserService from "./service/user";
-import UserController from "./controller/user";
+import UserRouter from "../src/router/user";
+import UserRepository from "../src/repository/user";
+import UserService from "../src/service/user";
+import UserController from "../src/controller/user";
 import routerOptions from "./config/router-config";
-import RoleRepository from "./repository/role";
-import RoleService from "./service/role";
-import RoleController from "./controller/role";
-import RoleRouter from "./router/role";
+import RoleRepository from "../src/repository/role";
+import RoleService from "../src/service/role";
+import RoleController from "../src/controller/role";
+import RoleRouter from "../src/router/role";
 
 const app = express();
 const port = 8080;
