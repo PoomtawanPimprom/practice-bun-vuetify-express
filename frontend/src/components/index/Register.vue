@@ -12,10 +12,10 @@
                         Register
                     </v-card-title>
                     <v-form fast-fail @submit.prevent class="pa-4">
-                        <v-text-field v-model="firstName" :rules="firstNameRules" label="First name"></v-text-field>
-                        <v-text-field v-model="lastName" :rules="lastNameRules" label="Last name"></v-text-field>
-                        <v-container class="pa-0">
-                            <v-spacer></v-spacer>
+                        <v-text-field v-model="firstName" :rules="firstNameRules" label="First name" clearable></v-text-field>
+                        <v-text-field v-model="lastName" :rules="lastNameRules" label="Last name" clearable></v-text-field>
+                        <v-container class="pa-0 d-flex justify-end" >
+                            
                             <v-btn class="mt-2" type="submit">Submit</v-btn>
                         </v-container>
                     </v-form>
