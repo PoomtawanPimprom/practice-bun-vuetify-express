@@ -8,56 +8,27 @@
                 and organize their photos, preserving their precious moments securely. The platform ensures safe storage
                 and easy access, making it perfect for those who want to keep their cherished memories alive forever.
             </p>
+            <v-btn class="ma-16 text-white font-weight-black" rounded="lg" size="x-large" color="#FFA725">
+                start
+            </v-btn>
+
         </v-container>
 
         <v-row>
             <v-col cols="12" sm="6" md="4" lg="3" v-for="(item, index) in images" :key="index">
-                <v-card class="">
-                    <v-img height="370" :src="item.src" cover />
-                    <v-card-title primary-title>
-                        {{ item.title }}
-                    </v-card-title>
-                    <v-card-subtitle>
-                        {{ item.photographerName }}
-                    </v-card-subtitle>
-                    <v-card-actions>
-                        <v-spacer></v-spacer>
-                        <v-btn @click="openDialog(item.src)">
-                            more
-                        </v-btn>
-                        <v-dialog v-model="dialog" width="380">
-                            <v-card>
-                                <v-img :src="selectImg"></v-img>
-
-                                <template v-slot:actions>
-                                    <v-btn class="ms-auto" text="Ok" @click="closeDialog"></v-btn>
-                                </template>
-                            </v-card>
-                        </v-dialog>
-                    </v-card-actions>
-                </v-card>
+                <Card :title="item.title" :subTitile="item.photographerName" :img="item.src"/>
             </v-col>
         </v-row>
     </v-container>
 </template>
 
 <script>
+import Card from '../Card.vue'
 export default {
-    methods: {
-        openDialog(img){
-            this.selectImg = img
-            this.dialog = true
-
-        },
-        closeDialog(){
-            this.selectImg = ""
-            this.dialog = false
-        }
-    },
+  components: { Card },
     data() {
         return {
-            selectImg:"",
-            dialog: false,
+
             images: [
                 { title: "Man in the Rain", photographerName: "M_pxio", src: "https://images.unsplash.com/photo-1740121933286-4340a63c4f97?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2OXx8fGVufDB8fHx8fA%3D%3D" },
                 { title: "China???", photographerName: "Polina", src: "https://images.unsplash.com/photo-1740672547046-74d1c45cb30b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2N3x8fGVufDB8fHx8fA%3D%3D", },
