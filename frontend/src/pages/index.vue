@@ -3,7 +3,6 @@
     <Banner></Banner>
     <Gallery></Gallery>
     <Register></Register>
-    <Footer></Footer>
   </v-container>
 </template>
 
