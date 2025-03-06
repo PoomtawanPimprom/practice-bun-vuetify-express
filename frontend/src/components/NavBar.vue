@@ -11,6 +11,8 @@
                 <v-spacer />
                 <!-- ปุ่มผู้ใช้ -->
                 <v-col cols="6" md="4" class="d-flex justify-end">
+                    <v-btn href="/user" variant="text">user</v-btn>
+                    <v-btn href="/shop" variant="text">shop</v-btn>
                     <v-btn href="/about" variant="text">about</v-btn>
                     <v-btn >
                         Login
@@ -33,10 +35,10 @@
         <v-navigation-drawer v-model="drawer" temporary>
             <v-list>
                 <v-list-item href="/" prepend-icon="mdi-home">
-                    <v-list-item-title>หน้าแรก</v-list-item-title>
+                    <v-list-item-title>home</v-list-item-title>
                 </v-list-item>
-                <v-list-item href="/help" prepend-icon="mdi-help-circle">
-                    <v-list-item-title>คู่มือการสมัครงาน</v-list-item-title>
+                <v-list-item href="/about" prepend-icon="mdi-help-circle">
+                    <v-list-item-title>about</v-list-item-title>
                 </v-list-item>
             </v-list>
         </v-navigation-drawer>
