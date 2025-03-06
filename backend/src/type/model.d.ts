@@ -16,7 +16,7 @@ export type UserRequest = {
     id?:number;
     fname:string;
     lname:string;
-    roleId:number;
+    roleId?:number;
     role?:Role
 }
 
