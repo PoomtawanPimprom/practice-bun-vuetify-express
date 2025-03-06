@@ -10,6 +10,7 @@ declare module 'vue' {
     Advertise: typeof import('./src/components/index/Advertise.vue')['default']
     Banner: typeof import('./src/components/index/Banner.vue')['default']
     ButtonNavigate: typeof import('./src/components/index/ButtonNavigate.vue')['default']
+    Card: typeof import('./src/components/Card.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
     Gallery: typeof import('./src/components/index/Gallery.vue')['default']
     Gallory: typeof import('./src/components/index/Gallory.vue')['default']
