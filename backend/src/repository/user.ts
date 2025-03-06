@@ -39,9 +39,9 @@ export default class UserRepository implements UserRepositoryType {
     }
 
     public async insert(userRequest: UserRequest): Promise<void> {
-        const { fname, lname, roleId } = userRequest
+        const { fname, lname } = userRequest
         await prisma.user.create({
-            data: { fname, lname, roleId }
+            data: { fname, lname }
         })
     }
 
