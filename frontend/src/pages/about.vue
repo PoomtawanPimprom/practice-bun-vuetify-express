@@ -1,5 +1,6 @@
 <template>
     <v-container fluid class="pa-0">
+        <NavBar/>
         <v-container fluid class="pa-0">
 
             <v-img aspect-ratio="16/9" cover height="500"
@@ -22,12 +23,15 @@
                 </v-col>
             </v-row>
         </v-container>
-
+        <Footer/>
     </v-container>
 </template>
 
 <script>
+import Footer from '../components/Footer.vue'
+import NavBar from '../components/NavBar.vue'
 export default {
+  components: { NavBar, Footer },
     data() {
         return {
             founders: [
