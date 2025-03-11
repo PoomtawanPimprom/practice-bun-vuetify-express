@@ -20,6 +20,12 @@ declare module 'vue-router/auto-routes' {
   export interface RouteNamedMap {
     '/': RouteRecordInfo<'/', '/', Record<never, never>, Record<never, never>>,
     '/about': RouteRecordInfo<'/about', '/about', Record<never, never>, Record<never, never>>,
+    '/dopa/': RouteRecordInfo<'/dopa/', '/dopa', Record<never, never>, Record<never, never>>,
+    '/dopa/checklist': RouteRecordInfo<'/dopa/checklist', '/dopa/checklist', Record<never, never>, Record<never, never>>,
+    '/dopa/components/BlogCard': RouteRecordInfo<'/dopa/components/BlogCard', '/dopa/components/BlogCard', Record<never, never>, Record<never, never>>,
+    '/dopa/components/Navbar': RouteRecordInfo<'/dopa/components/Navbar', '/dopa/components/Navbar', Record<never, never>, Record<never, never>>,
+    '/dopa/components/Sidebar': RouteRecordInfo<'/dopa/components/Sidebar', '/dopa/components/Sidebar', Record<never, never>, Record<never, never>>,
+    '/netflix/': RouteRecordInfo<'/netflix/', '/netflix', Record<never, never>, Record<never, never>>,
     '/shop/': RouteRecordInfo<'/shop/', '/shop', Record<never, never>, Record<never, never>>,
     '/user/': RouteRecordInfo<'/user/', '/user', Record<never, never>, Record<never, never>>,
     '/user/[id]': RouteRecordInfo<'/user/[id]', '/user/:id', { id: ParamValue<true> }, { id: ParamValue<false> }>,
