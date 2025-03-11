@@ -1,10 +1,8 @@
 <template>
   <v-app class="pa-0">
-    <NavBar />
     <v-main class="pa-0" style="width: 100%;">
       <router-view />
     </v-main>
-    <Footer/>
   </v-app>
 </template>
 
