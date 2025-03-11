@@ -9,7 +9,7 @@
      <v-container class="pa-8">
         <p>"Because the people we love always deserve a bouquet."</p>
         <v-row>
-          <v-col></v-col>
+          <v-col cols=""></v-col>
         </v-row>
       </v-container>
   </v-container>
