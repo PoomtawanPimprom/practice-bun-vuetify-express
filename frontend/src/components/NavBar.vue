@@ -11,6 +11,7 @@
                 <v-spacer />
                 <!-- ปุ่มผู้ใช้ -->
                 <v-col cols="6" md="4" class="d-flex justify-end">
+                    <v-btn href="/dopa" variant="text">dopa</v-btn>
                     <v-btn href="/user" variant="text">user</v-btn>
                     <v-btn href="/shop" variant="text">shop</v-btn>
                     <v-btn href="/about" variant="text">about</v-btn>
