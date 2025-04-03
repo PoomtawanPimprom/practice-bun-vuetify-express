@@ -34,3 +34,28 @@ export type RoleRequest = {
     id:number;
     roleName?:string;
 }
+
+
+
+export type Bouquet = {
+    id:number | undefined;
+    name:string | undefined;
+    price:number | undefined;
+    img:string | undefined;
+}
+
+export type BouquetResponse = {
+    id:number | undefined;
+    name:string | undefined;
+    price:number | undefined;
+    img:string | undefined;
+
+}
+
+export type BouquetRequest = {
+    id:number;
+    name?:string;
+    price:number;
+    img:string;
+
+}

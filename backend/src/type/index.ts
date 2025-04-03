@@ -7,9 +7,12 @@ import type {RoleControllerType} from './role/role-controller'
 import type {RoleRepositoryType} from './role/role-repository'
 import type {RoleServiceType} from './role/role-service'
 
+
+
 import type {
     User, UserRequest, UserResponse,
-    Role,RoleRequest,RoleResponse
+    Role,RoleRequest,RoleResponse,
+    Bouquet,BouquetRequest,BouquetResponse
 } from '../type/model'
 
 export type {
@@ -25,6 +28,11 @@ export type {
     RoleServiceType,
     Role,
     RoleRequest,
-    RoleResponse
+    RoleResponse,
+
+    
+    Bouquet,
+    BouquetRequest,
+    BouquetResponse,
 
 }
